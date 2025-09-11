@@ -1,0 +1,9 @@
+<div>
+    <nav><!-- Barra de navegacion, estan todos los links -->
+        <a routerLink="/">Contacto</a>
+        <a routerLink="/grupos">Grupos</a>
+        <button (click) =" authService.logout() ">Log Out</button>
+
+    </nav>
+</div>
+<router-outlet/> <!-- Muestra el contenido de los hijos -->

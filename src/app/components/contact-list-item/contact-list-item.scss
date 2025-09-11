@@ -1,0 +1,23 @@
+.favorite{
+    font-weight: bold;
+}
+li{
+    justify-content: space-between;
+    display: flex;
+    margin-left: 300px;
+    margin-top: 10px;
+    color: white;
+    background-color:black ;
+    padding: 20px;
+    align-items: center;
+}
+.favorite{
+    background-color: grey;
+}
+
+.boton-eliminar{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px black;
+}
