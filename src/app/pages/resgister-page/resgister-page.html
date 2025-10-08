@@ -30,7 +30,7 @@
         <p class="error">Debe colocar una contraseña de al menos 4 caracteres.</p>
       }
     </div>
-    <button>Iniciar sesión</button>
+    <button [disabled]="isLoading || registerForm.invalid">Iniciar sesión</button>
     @if(isLoading){
       <app-spinner></app-spinner>
     }
@@ -41,4 +41,4 @@
     </p>
   </form>
 
-  <a routerLink="/">Home</a>
+  
