@@ -7,7 +7,7 @@ import { onlyLoggedUserGuard } from './guards/only-logged-user-guard';
 import { onlyPublicUserGuard } from './guards/only-public-user-guard';
 import { ResgisterPage } from './pages/resgister-page/resgister-page';
 import { Group } from './pages/group/group';   
-import { Newcontact } from './pages/newcontact/newcontact';
+import { NewEditContact } from './pages/newcontact/newcontact';
 
 export const routes: Routes = [
     {
@@ -41,7 +41,7 @@ export const routes: Routes = [
             },
             {
                 path: "new",
-                component: Newcontact,
+                component: NewEditContact,
             },
         ]
     }
