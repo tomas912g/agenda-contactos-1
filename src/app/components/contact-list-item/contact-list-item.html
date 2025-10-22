@@ -3,9 +3,10 @@
     <span>{{contact().number}}</span>
     <span>{{contact().email}}</span>
     <span></span>
-    <span>
+    <span class="actions">
       <button class = "boton-eliminar"
       (click)="openDeleteModal()">Borrar</button>
+      <a class ="boton-editar"[routerLink]="['/contacts',contact().id,'edit']">Editar</a>
     </span>
 
     <span>

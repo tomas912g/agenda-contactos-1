@@ -7,7 +7,7 @@ li{
     margin-left: 300px;
     margin-top: 10px;
     color: white;
-    background-color:black ;
+    background-color:grey ;
     padding: 20px;
     align-items: center;
 }
@@ -18,6 +18,19 @@ li{
 .boton-eliminar{
     border-radius: 20px;
     padding: 10px;
+    background-color: red;
+    border: 1px solid black;
+}
+.boton-editar{
+    border-radius: 20px;
+    padding: 10px;
     background-color: white;
-    border: 1px black;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+.actions{
+  display: flex;
+  gap: 8px;          
+  align-items: center;
 }

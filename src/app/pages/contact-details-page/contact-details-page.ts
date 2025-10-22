@@ -40,5 +40,13 @@ export class ContactDetailsPage implements OnInit {
       if(res) this.router.navigate(['/']);
     }
   }
+  async editContact() {
+    if (!this.contacto) return;
+    const res = await this.contactService.editContact(this.contacto);
+    if (res) {
+      this.contacto = res;
+      this.router.navigate(['/contacts', res.id]);
+    }
+  }
 }
 

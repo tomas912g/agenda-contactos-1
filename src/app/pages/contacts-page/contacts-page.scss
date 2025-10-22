@@ -1,12 +1,69 @@
-li{
-    display: flex;
-    justify-content: space-between;
-    color:black;
-    font-size:large;
-    font-weight: bold;
-    margin-left: 300px;
-    padding: 10px;
-}
 .error{
     color: red;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+  color: #222;
+}
+/* enlaces superiores (Ir a login / Crear contacto) */
+.title {
+  display: inline-block;
+  margin-right: 10px;
+}
+.title a {
+  text-decoration: none;
+  background-color: #0078d7;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+.title a:hover {
+  background-color: #005fa3;
+}
+
+/* lista principal */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 1000px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* cabecera de columnas */
+.gridHeader {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #0078d7;
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  border-bottom: 2px solid #005fa3;
+}
+
+/* filas (app-contact-list-item dentro del enlace) */
+.list > a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.list > a app-contact-list-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 14px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+.list > a app-contact-list-item:hover {
+  background-color: #f1f6fc;
 }
