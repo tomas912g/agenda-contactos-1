@@ -2,14 +2,18 @@
     font-weight: bold;
 }
 li{
-    justify-content: space-between;
     display: flex;
     margin-left: 300px;
     margin-top: 10px;
     color: white;
-    background-color:grey ;
+    background-color: grey;
     padding: 20px;
-    align-items: center;
+    text-align: left;
+}
+span {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .favorite{
     background-color: grey;
