@@ -16,13 +16,13 @@ body {
   margin-right: 10px;
 }
 .title a {
-  text-decoration: none;
-  background-color: #0078d7;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 4px;
-  font-size: 14px;
-  transition: background-color 0.2s ease;
+  display: block;
+  padding:8px 14px;
+  border-radius:999px;
+  background:#1565c0;
+  margin-right: 10px;
+  color:#fff;
+  text-decoration:none;
 }
 .title a:hover {
   background-color: #005fa3;
@@ -35,6 +35,7 @@ body {
   margin: 30px auto;
   max-width: 1000px;
   border-radius: 6px;
+  grid-row: 3;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }

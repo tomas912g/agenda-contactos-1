@@ -8,12 +8,12 @@
   <p>Teléfono: {{contacto.number}}</p>
 @if (contacto.isFavorite) {
   <p>⭐</p>
-  <button (click)="toggleFavorite()">Desmarcar favorito</button>
+  <button class="boton-favorito"(click)="toggleFavorite()">Desmarcar favorito</button>
 } @else {
-  <button (click)="toggleFavorite()">Marcar como favorito</button>
+  <button class="boton-favorito"(click)="toggleFavorite()">Marcar como favorito</button>
 }
-  <p>
-    <a [routerLink]="['/new',idContacto(),]">Editar</a>
+  <p class="link-editar">
+    <a [routerLink]="[':idContacto/edit',idContacto()]">Editar</a>
   </p>
-  <button (click)="deleteContact()">Eliminar</button>
+  <button class="boton-eliminar"(click)="deleteContact()">Eliminar</button>
 }
