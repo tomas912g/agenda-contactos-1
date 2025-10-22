@@ -2,14 +2,15 @@
     font-weight: bold;
 }
 li{
-    display: flex;
-    margin-left: 300px;
-    margin-top: 10px;
-    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 130px;
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
     background-color: grey;
-    padding: 20px;
-    text-align: left;
 }
+
 span {
     display: flex;
     flex-direction: column;
@@ -18,7 +19,6 @@ span {
 .favorite{
     background-color: grey;
 }
-
 .boton-eliminar{
     border-radius: 20px;
     padding: 10px;

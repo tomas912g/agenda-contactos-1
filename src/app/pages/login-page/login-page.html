@@ -15,14 +15,20 @@
       <p class="error">Debe colocar una contraseña de al menos 4 caracteres.</p>
     } 
   </div>
-  <button [disabled]="isLoading || loginForm.invalid">Iniciar sesión</button>
-  @if(isLoading){
-    <app-spinner></app-spinner>
-  }
-  @if (errorLogin) {
-    <p class="error">Datos de sesión incorrectos, intente nuevamente.</p>
-  } 
-  <p>No tenés cuenta? <a routerLink="/register">Registrate</a></p>
+  <button [disabled]="isLoading || loginForm.invalid">
+    @if (isLoading) {
+      <app-spinner></app-spinner>
+    }
+    @if (!isLoading) {
+      <span>Iniciar sesión</span>
+    }
+</button>
+
+@if (errorLogin) {
+  <p class="error">Datos de sesión incorrectos, intente nuevamente.</p>
+}
+
+<p>No tenés cuenta? <a routerLink="/register">Registrate</a></p>
   </form>
 
 </div>

@@ -2,7 +2,7 @@
     <nav><!-- Barra de navegacion, estan todos los links -->
         <a routerLink="/">Contacto</a>
         <a routerLink="/grupos">Grupos</a>
-        <button (click) =" openLogoutModal() ">Log Out</button>
+        <button (click)="authService.logout()">Log out</button>
 
     </nav>
 </div>

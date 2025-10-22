@@ -33,7 +33,7 @@ export class ContactsService {
           Authorization: "Bearer "+this.authService.token,
         },
       });
-    if(!res.ok) return;
+    if(!res.ok) return undefined;
     const resContact:Contact = await res.json();
     return resContact;
   }

@@ -16,16 +16,13 @@ export class LoginPage {
   isLoading = false;
 
   async login(form:any){
-    console.log(form.value)
-    this.errorLogin = false;
-    if(!form.email || !form.password){
-    if(!form.value.email || !form.value.password){
+    if (!form.value.email || !form.value.password) {
       this.errorLogin = true;
-      return
+      return;
     }
     this.isLoading = true;
-    this.authService.login(form.value);
+    await this.authService.login(form.value);
     this.isLoading = false;
     this.errorLogin = true;
   }
-}}
+}
